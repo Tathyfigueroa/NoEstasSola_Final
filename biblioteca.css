@@ -2,71 +2,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playwrite+VN&family=Space+Grotesk:wght@500&display=swap');
 
-.Autoras{
-height: 60vh !important;
-background: url(imagenes/mujeres\ 2.jpg);
-background-size: cover;
+*{
+  margin: 0;
+    padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;/*investigar*/
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #700548;
-  padding: 1rem;
+body{
+  background: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
 }
 
-.logo a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
+.barras{
+  width: 75%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
+/*-----INICIO DE HEADER----*/
+
+header{
+  background: #984242;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 600px;
+  width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a:hover {
-  text-decoration: underline;
+header.menu{
+  margin: 30px 0;
+  text-align: right;
 }
 
-.Autoras h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+header .menu a{
+  margin: 0 20px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration:none ;
+    border-bottom:2px solid transparent;
+    font-size: 1cm;
+    margin-right: 40px;
+
+}
+
+header .menu a:hover{
+  border-bottom: 2px solid #eeabab;
+}
+
+header .contiene-texto{
   display: flex;
   justify-content: center;
+  align-content: center;
+  margin: 190px 0 ;
+}
+
+header.contiene-texto .Texto{
+  border: 2px solid rgb(225,255,255,0.5);
+  border-radius: 3px;
+  display:inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+header .contiene-texto .Texto h1, 
+header .contiene-texto .Texto p{
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0;
+}
+
+header .contiene-texto .Texto .nombre{
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+header .contiene-texto .Texto .beneficios{
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/*------------SECTION MAIN-----------*/
+.main.content{
+  overflow: visible;
+}
+
+.main .empoderamiento {
+  text-align: center;
+}
+
+.main .empoderamiento .texto{
+  color: black;
+    font-weight: 300px;
+    font-size: 1cm;
+    line-height: 30px;
+    width: 85%;
+    margin: 40px auto 60px auto;
+}
+
+.main .empoderamiento .texto .titulo,
+.main .empoderamiento .texto .titulo2  {
+  font-size: 34px;
+  line-height: 34px;
   margin-bottom: 40px;
-  font-size: 60px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  }
-  
-  .Autoras p{
-  font-family: "Martel Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300px;
+  color: #7b2424;
+  text-align: center;
+}
+
+.main .empoderamiento .texto .bold{
+  color: #da8484;
+    text-decoration: underline;
+}
+
+
+/*-----SECCION LIBROS-----*/
+.contenedors{
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  color: rgb(255, 255, 255);
-  }
-  .contenedor{
-    width: 70% ;
-    max-width: 900px;
-    display: flow-root;
-    margin-top: 100px;
-    margin-left: 600px;
-    margin-right: 600px;
-    margin-bottom: 20px;
-    
-  }
- 
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.libros{
+  background:#fff ;
+    padding: 20px;
+    width: 70%;
+}
+
+.libros article .thumb{
+  margin-bottom: 20px;
+}
+
+.libros article .thumb img{
+  width: 100%;
+  vertical-align: top;
+}
+
+.libros article h2{
+  margin-bottom:20 px;
+  font-weight: normal;
+  font-size: 32px;
+  text-align: center;
+}
+
+.libros article p{
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 27px; 
+}
+
+/*-----PARTE DE ASIDE DENTRO DE LOS LIBROS----------*/
+aside{
+  width: 30%;
+  background: #7e2707;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+}
+aside .ad{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  background: #d63a06}
+
   .contenedor h6{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
