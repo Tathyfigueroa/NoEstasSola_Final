@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5E5F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #700548;
+    padding: 1rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem; /* Puedes ajustar el tamaño según tus necesidades */
+    font-weight: 700; /* Esto aplica el estilo en negrita */
+    margin-bottom: 2rem;
+}
+
+.quienes-somos, .nuestra-historia, .nuestros-objetivos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-somos .text, .nuestros-objetivos .text {
+    max-width: 600px;
+    margin: 0 1rem;
+
+}
+
+.nuestra-historia .text {
+    max-width: 600px;
+    margin: 0 1rem;
+}
+
+.quienes-somos .image img {
+    max-width: 400px; /* Ajusta este valor según tus necesidades */
+    height: auto;
+    border-radius: 10px;
+}
+
+.nuestra-historia .image img, .nuestros-objetivos .image img {
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    height: auto;
+    border-radius: 10px;
+}
+.nuestros-objetivos .image img, .nuestros-objetivos .image img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+.nuestros-objetivos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nuestros-objetivos li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
+}
+
+footer {
+    background-color: #700548;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    flex: 1;
+    text-align: center;
+}
+
+footer .contact-info, footer .social-media, footer .location {
+    flex: 1;
+    margin: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
