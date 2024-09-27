@@ -255,10 +255,10 @@ button{
   height: 4em;
   width: 7em;
   
-  background: #444;
+  background: #ffebeb;
   background: linear-gradient(top, #555, #333);
   border: none;
-  border-top: 3px solid orange;
+  border-top: 3px solid rgb(78, 9, 83);
   border-radius: 0 0 0.2em 0.2em;
   color: #fff;
   font-family: Helvetica, Arial, Sans-serif;
