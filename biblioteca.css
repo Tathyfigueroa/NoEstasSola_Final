@@ -112,7 +112,6 @@ header .contiene-texto .Texto .beneficios{
     width: 85%;
     margin: 40px auto 60px auto;
 }
-
 .main .empoderamiento .texto .titulo,
 .main .empoderamiento .texto .titulo2  {
   font-size: 34px;
@@ -123,11 +122,11 @@ header .contiene-texto .Texto .beneficios{
   text-align: center;
 }
 
+
 .main .empoderamiento .texto .bold{
   color: #da8484;
     text-decoration: underline;
 }
-
 
 /*-----SECCION LIBROS-----*/
 .contenedors{
