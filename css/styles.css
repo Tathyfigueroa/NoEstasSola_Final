@@ -1,17 +1,39 @@
-body {
+/* Configuración general */
+body { 
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5E5F0;
+    background-color: #dfd6ff;
 }
 
+/* Navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #700548;
+    background-color: #7f5cff;
     padding: 1rem;
 }
+
+/* Estilo de los enlaces y el logo en el navbar */
+.navbar a {
+    font-family: 'Work Sans', sans-serif; /* Aplica Work Sans a los enlaces del navbar */
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.logo a {
+    font-family: 'Work Sans', sans-serif; /* Aplica Work Sans al logo */
+    font-weight: 700; /* Negrita para el logo */
+    font-size: 1.5rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
 
 .logo a {
     color: white;
@@ -30,6 +52,7 @@ body {
     text-decoration: underline;
 }
 
+/* Contenido principal */
 .content {
     padding: 2rem;
     text-align: center;
@@ -37,11 +60,12 @@ body {
 
 .content h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3rem; /* Puedes ajustar el tamaño según tus necesidades */
+    font-size: 3rem; /* Ajusta el tamaño según tus necesidades */
     font-weight: 700; /* Esto aplica el estilo en negrita */
     margin-bottom: 2rem;
 }
 
+/* Secciones: Quienes somos, Nuestra historia, Nuestros objetivos */
 .quienes-somos, .nuestra-historia, .nuestros-objetivos {
     display: flex;
     justify-content: space-around;
@@ -52,13 +76,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.quienes-somos .text, .nuestros-objetivos .text {
-    max-width: 600px;
-    margin: 0 1rem;
-
-}
-
-.nuestra-historia .text {
+.quienes-somos .text, .nuestra-historia .text, .nuestros-objetivos .text {
     max-width: 600px;
     margin: 0 1rem;
 }
@@ -74,11 +92,13 @@ body {
     height: auto;
     border-radius: 10px;
 }
-.nuestros-objetivos .image img, .nuestros-objetivos .image img {
-    max-width: 300px; 
+
+.nuestros-objetivos .image img {
+    max-width: 300px;
     height: auto;
     border-radius: 10px;
 }
+
 .nuestros-objetivos ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -87,11 +107,50 @@ body {
 
 .nuestros-objetivos li {
     margin: 0.5rem 0;
-    font-size: 1.2rem; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente según tus necesidades */
 }
 
+/* Tipografía de títulos */
+.quienes-somos h2, 
+.nuestra-historia h2, 
+.nuestros-objetivos h2, 
+.salud-mental h2, 
+.importancia-salud-mental h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    color: #201E1F;
+}
+
+/* Tipografía de párrafos */
+.quienes-somos p, 
+.nuestra-historia p, 
+.nuestros-objetivos li, 
+.salud-mental p, 
+.importancia-salud-mental p {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #201E1F;
+    text-align: justify;
+}
+
+/*Navbar se mueveee*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #7f5cff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Footer */
 footer {
-    background-color: #700548;
+    background-color: #7f5cff;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -122,8 +181,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
