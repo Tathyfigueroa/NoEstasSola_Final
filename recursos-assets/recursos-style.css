@@ -46,7 +46,6 @@
 
 .intro-tecnicas {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
@@ -170,33 +169,33 @@ p {
 }
 
 .mansory-gallery {
-  column-count: 3; /* Controla el número de columnas estilo masonry */
-  column-gap: 15px; /* Espacio entre las columnas */
+  column-count: 3; 
+  column-gap: 15px; 
 }
 
 .photo {
-  break-inside: avoid; /* Evita que las imágenes se rompan entre columnas */
-  margin-bottom: 15px; /* Espacio entre las imágenes verticalmente */
+  break-inside: avoid; /
+  margin-bottom: 15px; 
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 4px 15px rgba(32, 30, 31, 0.3); /* Sombra con el color HEX #201E1F y transparencia */
+  box-shadow: 0px 4px 15px rgba(32, 30, 31, 0.3); 
 }
 
 .photo img {
   width: 100%;
-  height: auto; /* Mantiene la proporción original de las imágenes */
+  height: auto; 
   display: block;
-  object-fit: cover; /* Asegura que las imágenes se adapten bien dentro de su contenedor */
+  object-fit: cover; 
   transition: transform 0.3s ease-in-out;
 }
 
 .photo:hover img {
-  transform: scale(1.05); /* Efecto de zoom en hover */
+  transform: scale(1.05); 
 }
 
 @media (max-width: 768px) {
   .mansory-gallery {
-    column-count: 1; /* Una columna en pantallas pequeñas */
+    column-count: 1; 
   }
 }
 
