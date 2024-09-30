@@ -51,7 +51,8 @@ body{
 /*-----INICIO DE HEADER----*/
 
 header{
-  background: #984242;
+  background:#201E1F;
+  
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px;
