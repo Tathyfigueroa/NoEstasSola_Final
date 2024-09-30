@@ -101,7 +101,7 @@ header .contiene-texto .Texto .beneficios{
 }
 
 .main .empoderamiento .texto{
-  color: black;
+  color:  #757575;
     font-weight: 300px;
     font-size: 1cm;
     line-height: 30px;
@@ -114,7 +114,7 @@ header .contiene-texto .Texto .beneficios{
   line-height: 34px;
   margin-bottom: 40px;
   font-weight: 300px;
-  color: #7b2424;
+  color: #000000;
   text-align: center;
 }
 
