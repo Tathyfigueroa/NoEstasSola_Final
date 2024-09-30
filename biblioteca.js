@@ -1,7 +1,7 @@
 var typed = new Typed('.typed', {
 	strings: [
 		'<i class="mascota">Autoayuda</i>',
-		'<i class="mascota">Autoestima/i>',
+		'<i class="mascota">Autoestima</i>',
 		'<i class="mascota">Amor propio</i>',
 		'<i class="mascota">Autoconocimiento</i>',
 	],
