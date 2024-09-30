@@ -253,12 +253,13 @@ button{
   height: 4em;
   width: 7em;
 
-  background: #5e2f2f;
+  background:#FCFF47;
+  
   background: linear-gradient(top, #555, #333);
   border: none;
   border-top: 3px solid rgb(78, 9, 83);
   border-radius: 0 0 0.2em 0.2em;
-  color: #fff;
+  color: #000000;
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 1em;
   transform-origin: 50% 5em;
