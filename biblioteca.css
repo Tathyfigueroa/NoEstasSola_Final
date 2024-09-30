@@ -204,7 +204,8 @@ aside .ad{
   text-align: center;
   color: #fff;
   padding: 50px 0;
-  background: #d63a06}
+  background:#7F5CFF;
+}
 
   .contenedor h6{
     font-family: "Space Grotesk", sans-serif;
@@ -278,7 +279,7 @@ button{
 button{
   height: 4em;
   width: 7em;
-  
+
   background: #5e2f2f;
   background: linear-gradient(top, #555, #333);
   border: none;
