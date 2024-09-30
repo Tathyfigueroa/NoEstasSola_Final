@@ -4,14 +4,14 @@
 
 *{
   margin: 0;
-    padding: 0;
+   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;/*investigar*/
 }
 
 body{
-  background:#DFD6FF;
+  background:#312559;
   font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
 }
