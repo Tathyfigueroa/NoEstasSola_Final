@@ -264,6 +264,14 @@ button{
   transform-origin: 50% 5em;
 }
 
+/*--BOTON CON LINK*----*/
+.linkboton {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
 
 /*--PIE DE PAGINA*----*/
 footer {
