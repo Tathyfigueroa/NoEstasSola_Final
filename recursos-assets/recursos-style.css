@@ -47,6 +47,7 @@
 .intro-tecnicas {
     display: flex;
     align-items: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 
@@ -174,7 +175,7 @@ p {
 }
 
 .photo {
-  break-inside: avoid; /
+  break-inside: avoid;
   margin-bottom: 15px; 
   border-radius: 15px;
   overflow: hidden;
@@ -223,15 +224,14 @@ p {
   position: relative;
   max-width: 90%;
   max-height: 90%;
-  background-color: transparent; /* Sin fondo blanco */
-  display: flex;
+  background-color: transparent; 
   justify-content: center;
   align-items: center;
 }
 
 .modal-content img {
   max-width: 100%;
-  max-height: 90vh; /* La imagen no sobrepasa el alto de la pantalla */
+  max-height: 90vh; 
   border-radius: 10px;
 }
 
@@ -261,42 +261,42 @@ p {
   }
 }
 
+/* accordion
+*/
 
-
-
-.container-accordion{
-  padding-top: 50px;
-  padding-bottom: 50px;
+/* Estilos de la sección */
+.container-accordion {
+  padding: 50px 20px; /* Ajuste de padding */
   background: #F5E5F0;
-  width: auto;
+  width: 100%; /* Se ajusta al ancho de la pantalla */
 }
 
-
+/* Título */
 .tittle-cuestionarios {
   margin-top: 2rem;
   text-align: center;
-  
 }
 
-.accordion{
+/* Acordeón */
+.accordion {
   margin: 60px auto;
-  width: 600px;
+  width: 100%; /* Asegura que ocupe el 100% del contenedor */
+  max-width: 800px; /* Limita el tamaño máximo en pantallas grandes */
 }
 
-
-
+/* Elementos del acordeón */
 .accordion li {
   list-style: none;
-  width: 100%;
-  margin: 20px;
+  margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
   background-color: #fffafd;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
               -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease; /* Añade animación */
 }
 
-.accordion li label{
+.accordion li label {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -305,45 +305,93 @@ p {
   cursor: pointer;
 }
 
-label::before{
+/* Cambia el icono '+' a '-' */
+label::before {
   content: '+';
   margin-right: 10px;
   font-size: 24px;
   font-weight: 700;
 }
 
-input[type="radio"]{
+/* Ocultar input de radio */
+input[type="radio"] {
   display: none;
 }
 
-.accordion .content{
+/* Contenido del acordeón (oculto por defecto) */
+.accordion .content {
   color: #555;
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
+  transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-.accordion input[type="radio"]:checked + label + .content{
-  max-height: 400px;
-  padding: 10px 10px 20px;
+/* Contenido visible cuando se selecciona el input */
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px; /* Define la altura máxima para el contenido abierto */
+  padding: 10px 10px 20px; /* Añade padding al contenido */
 }
 
-.accordion input[type="radio"]:checked + label::before{
-  content: '-';
+.accordion input[type="radio"]:checked + label::before {
+  content: '-'; /* Cambia el icono al abrirse */
 }
 
-.secondary-button { 
+/* Botón secundario */
+.secondary-button {
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
-  font-style: normal;
   margin-left: 10px;
-  align-items: right;
   border: none;
   background: none;
   color: #AA4586;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
 }
+
+.secondary-button:hover {
+  color: #fff;
+  background-color: #AA4586;
+  border-color: #AA4586;
+}
+
+/* --- Responsividad --- */
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .accordion {
+    width: 90%; /* Se reduce el ancho para pantallas más pequeñas */
+  }
+
+  .accordion li label {
+    font-size: 16px; /* Se reduce el tamaño de texto */
+  }
+
+  .secondary-button {
+    font-size: 14px; /* Ajuste del tamaño del botón */
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 576px) {
+  .accordion {
+    width: 100%; /* Asegura que use todo el espacio disponible */
+  }
+
+  .accordion li label {
+    font-size: 14px; /* Texto más pequeño para móviles */
+  }
+
+  .secondary-button {
+    font-size: 12px; /* Ajuste del tamaño del botón */
+  }
+}
+
+
+/*Termina acordion*/
 
 .slider-juegos {
   padding: 20px;
