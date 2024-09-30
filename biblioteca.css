@@ -120,7 +120,7 @@ header .contiene-texto .Texto .beneficios{
 }
 
 .main .empoderamiento .texto .bold{
-  color: #da8484;
+  color: #7F5CFF;
     text-decoration: underline;
 }
 
@@ -165,7 +165,7 @@ header .contiene-texto .Texto .beneficios{
 /*-----PARTE DE ASIDE DENTRO DE LOS LIBROS----------*/
 aside{
   width: 30%;
-  background: #7e2707;
+  background: #000000;
   padding: 20px;
   display: flex;
   flex-direction: column;
