@@ -3,13 +3,35 @@
   padding: 0;
 }
 
+/*Comienza navbar*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #700548;
+  background-color: #7f5cff;
   padding: 1rem;
 }
+
+/* Estilo de los enlaces y el logo en el navbar */
+.navbar a {
+  font-family: 'Work Sans', sans-serif; 
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.logo a {
+  font-family: 'Work Sans', sans-serif; 
+  font-weight: 700; 
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
 
 .logo a {
   color: white;
@@ -27,6 +49,8 @@
 .menu a:hover {
   text-decoration: underline;
 }
+
+/*Finaliza Navbar*/
 
 .header-recursos {
     background-color: #201E1F;
@@ -207,14 +231,14 @@ p {
 }
 
 .modal {
-  display: none; /* Oculto por defecto */
+  display: none; 
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+  background-color: rgba(0, 0, 0, 0.8); 
   justify-content: center;
   align-items: center;
 }
@@ -261,30 +285,29 @@ p {
   }
 }
 
-/* accordion
+/* acordeon
 */
 
-/* Estilos de la sección */
 .container-accordion {
-  padding: 50px 20px; /* Ajuste de padding */
+  padding: 50px 20px; 
   background: #F5E5F0;
-  width: 100%; /* Se ajusta al ancho de la pantalla */
+  width: 100%; 
 }
 
-/* Título */
+
 .tittle-cuestionarios {
   margin-top: 2rem;
   text-align: center;
 }
 
-/* Acordeón */
+
 .accordion {
   margin: 60px auto;
-  width: 100%; /* Asegura que ocupe el 100% del contenedor */
-  max-width: 800px; /* Limita el tamaño máximo en pantallas grandes */
+  width: 100%; 
+  max-width: 800px; 
 }
 
-/* Elementos del acordeón */
+
 .accordion li {
   list-style: none;
   margin: 20px 0;
@@ -305,7 +328,7 @@ p {
   cursor: pointer;
 }
 
-/* Cambia el icono '+' a '-' */
+
 label::before {
   content: '+';
   margin-right: 10px;
@@ -313,12 +336,12 @@ label::before {
   font-weight: 700;
 }
 
-/* Ocultar input de radio */
+
 input[type="radio"] {
   display: none;
 }
 
-/* Contenido del acordeón (oculto por defecto) */
+
 .accordion .content {
   color: #555;
   padding: 0 10px;
@@ -328,17 +351,17 @@ input[type="radio"] {
   transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-/* Contenido visible cuando se selecciona el input */
+
 .accordion input[type="radio"]:checked + label + .content {
-  max-height: 400px; /* Define la altura máxima para el contenido abierto */
-  padding: 10px 10px 20px; /* Añade padding al contenido */
+  max-height: 400px; 
+  padding: 10px 10px 20px; 
 }
 
 .accordion input[type="radio"]:checked + label::before {
-  content: '-'; /* Cambia el icono al abrirse */
+  content: '-'; 
 }
 
-/* Botón secundario */
+
 .secondary-button {
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
@@ -360,38 +383,37 @@ input[type="radio"] {
 
 /* --- Responsividad --- */
 
-/* Pantallas medianas */
 @media (max-width: 768px) {
   .accordion {
-    width: 90%; /* Se reduce el ancho para pantallas más pequeñas */
+    width: 90%; 
   }
 
   .accordion li label {
-    font-size: 16px; /* Se reduce el tamaño de texto */
+    font-size: 16px; 
   }
 
   .secondary-button {
-    font-size: 14px; /* Ajuste del tamaño del botón */
+    font-size: 14px; 
   }
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 576px) {
   .accordion {
-    width: 100%; /* Asegura que use todo el espacio disponible */
+    width: 100%; 
   }
 
   .accordion li label {
-    font-size: 14px; /* Texto más pequeño para móviles */
+    font-size: 14px; 
   }
 
   .secondary-button {
-    font-size: 12px; /* Ajuste del tamaño del botón */
+    font-size: 12px; 
   }
 }
 
 
-/*Termina acordion*/
+/*Termina acordeon*/
 
 .slider-juegos {
   padding: 20px;
@@ -504,8 +526,11 @@ input[type="radio"]{
   color: #AA4586;
 }
 
+/*comienza footer*/
+
+/* Footer */
 footer {
-  background-color: #700548;
+  background-color: #7f5cff;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -535,5 +560,12 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.image img {
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
 }
 
