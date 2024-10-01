@@ -7,13 +7,15 @@
    padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;/*investigar*/
+  box-sizing: border-box;
 }
 
 body{
   font-size: 16px;
   background-color:#DFD6FF;
   font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 
@@ -240,6 +242,7 @@ aside .ad{
 /*-BOTON DE AUTORA--*/
 button{
   animation: wiggle 2s linear infinite;
+  width: 50%;
 }
 
 /* Keyframes */
@@ -270,9 +273,7 @@ button{
 button{
   height: 4em;
   width: 7em;
-
   background:#FCFF47;
-  
   background: linear-gradient(top, #555, #333);
   border: none;
   border-top: 3px solid rgb(80, 80, 80);
@@ -280,7 +281,7 @@ button{
   color: #000000;
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 1em;
-  transform-origin: 50% 5em;
+  transform-origin: 30% 3em;
 }
 
 /*--BOTON CON LINK*----*/
@@ -339,7 +340,11 @@ footer a:hover {
     }
 
     aside .ad{
-      width: 40%;  
+      width: 30%;  
+    }
+
+    aside .ad a{
+      width: 30%;
     }
 }
 
