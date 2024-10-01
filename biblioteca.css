@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playwrite+VN&family=Space+Grotesk:wght@500&display=swap');
-
 *{
   margin: 0;
    padding: 0;
@@ -91,11 +88,19 @@ header .contiene-texto{
 }
 
 
-header .contiene-texto .Texto h1, 
-header .contiene-texto .Texto p{
-  color: #ffffff;
-  font-weight: 300;
+header .contiene-texto .Texto h1{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: #7F5CFF;
   margin: 0;
+}
+header .contiene-texto .Texto p{
+font-optical-sizing: auto;
+font-weight: 800;
+color: #ffffff;
+margin: 0;
+font-family: "Martel Sans", sans-serif;
 }
 
 header .contiene-texto .Texto .nombre{
@@ -112,7 +117,10 @@ header .contiene-texto .Texto .beneficios{
 
 /*------------SECTION MAIN-----------*/
 .main.content{
-  overflow: visible;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .main .empoderamiento {
@@ -120,27 +128,24 @@ header .contiene-texto .Texto .beneficios{
 }
 
 .main .empoderamiento .texto{
-  color:  #757575;
-    font-weight: 300px;
-    font-size: 1cm;
-    line-height: 30px;
-    width: 85%;
-    margin: 40px auto 60px auto;
-}
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 550;
+  font-style: normal;
 
+}
 .main .empoderamiento .texto .titulo,
 .main .empoderamiento .texto .titulo2  {
-  font-size: 34px;
-  line-height: 34px;
-  margin-bottom: 40px;
-  font-weight: 300px;
-  color: #000000;
-  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: #7F5CFF;
+  margin: 0;
 }
 
 .main .empoderamiento .texto .bold{
   color: #7F5CFF;
     text-decoration: underline;
+   font-size: large;
 }
 
 /*-----SECCION LIBROS-----*/
