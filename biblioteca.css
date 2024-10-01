@@ -1,20 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playwrite+VN&family=Space+Grotesk:wght@500&display=swap');
-
 *{
   margin: 0;
    padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;/*investigar*/
+  box-sizing: border-box;
 }
 
 body{
-  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   background-color:#DFD6FF;
-  ;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .barras{
@@ -32,11 +31,20 @@ body{
   padding: 1rem;
 }
 
+.navbar a {
+  font-family: 'Work Sans', sans-serif; 
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
 .logo a {
   color: white;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+
 }
 
 .menu a {
@@ -49,20 +57,27 @@ body{
   text-decoration: underline;
 }
 
+.barras{
+  width: 75%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
 /*-----INICIO DE HEADER----*/
 
 header{
   background:#201E1F;
-  
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 600px;
+  max-height: 800px;
   width: 100%;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .contiene-texto{
@@ -73,11 +88,19 @@ header .contiene-texto{
 }
 
 
-header .contiene-texto .Texto h1, 
-header .contiene-texto .Texto p{
-  color: #ffffff;
-  font-weight: 300;
+header .contiene-texto .Texto h1{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: #7F5CFF;
   margin: 0;
+}
+header .contiene-texto .Texto p{
+font-optical-sizing: auto;
+font-weight: 800;
+color: #ffffff;
+margin: 0;
+font-family: "Martel Sans", sans-serif;
 }
 
 header .contiene-texto .Texto .nombre{
@@ -94,7 +117,10 @@ header .contiene-texto .Texto .beneficios{
 
 /*------------SECTION MAIN-----------*/
 .main.content{
-  overflow: visible;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .main .empoderamiento {
@@ -102,27 +128,24 @@ header .contiene-texto .Texto .beneficios{
 }
 
 .main .empoderamiento .texto{
-  color:  #757575;
-    font-weight: 300px;
-    font-size: 1cm;
-    line-height: 30px;
-    width: 85%;
-    margin: 40px auto 60px auto;
-}
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 550;
+  font-style: normal;
 
+}
 .main .empoderamiento .texto .titulo,
 .main .empoderamiento .texto .titulo2  {
-  font-size: 34px;
-  line-height: 34px;
-  margin-bottom: 40px;
-  font-weight: 300px;
-  color: #000000;
-  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: #7F5CFF;
+  margin: 0;
 }
 
 .main .empoderamiento .texto .bold{
   color: #7F5CFF;
     text-decoration: underline;
+   font-size: large;
 }
 
 /*-----SECCION LIBROS-----*/
@@ -181,7 +204,7 @@ aside .ad{
   background:#7F5CFF;
 }
 
-  .contenedor h6{
+  .contenedors h6{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -189,7 +212,7 @@ aside .ad{
   display: flex;
   justify-content: center;
   }
-  .contenedor p{
+  .contenedors p{
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -223,6 +246,7 @@ aside .ad{
 /*-BOTON DE AUTORA--*/
 button{
   animation: wiggle 2s linear infinite;
+  width: 50%;
 }
 
 /* Keyframes */
@@ -253,9 +277,7 @@ button{
 button{
   height: 4em;
   width: 7em;
-
   background:#FCFF47;
-  
   background: linear-gradient(top, #555, #333);
   border: none;
   border-top: 3px solid rgb(80, 80, 80);
@@ -263,7 +285,7 @@ button{
   color: #000000;
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 1em;
-  transform-origin: 50% 5em;
+  transform-origin: 30% 3em;
 }
 
 /*--BOTON CON LINK*----*/
@@ -307,4 +329,57 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/*COMIENZO PARA HACERLO RESPONSIVE */
+/*Pantallas medianas*/
+@media (max-width: 768px) {
+  .main{
+    width: 100%;
+}
+  .libros{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  aside .ad{
+    width: 40%;
+  }
+
+  .linkboton{
+    font-size: 70%;
+  }
+  button{
+    font-size: 70%;
+  }
+}
+
+/*pantallas pequeñas*/
+@media (max-width: 576px) {
+  .main{
+    width: 100%;
+}
+  .libros{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  aside .ad{
+    width: 30%;
+  }
+
+  .linkboton{
+    font-size: 60%;
+  }
+  button{
+    font-size: 60%;
+  }
 }
