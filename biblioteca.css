@@ -74,7 +74,7 @@ header{
   background:#201E1F;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 600px;
+  max-height: 800px;
   width: 100%;
   padding: 50px 0;
   display: flex;
@@ -327,64 +327,54 @@ footer a:hover {
 }
 
 /*COMIENZO PARA HACERLO RESPONSIVE */
-@media screen and (max-width: 800px) 
-{
-    .main{
-        width: 100%;
-    }
+/*Pantallas medianas*/
+@media (max-width: 768px) {
+  .main{
+    width: 100%;
+}
+  .libros{
+    width: 100%;
+  }
 
-    aside{
-        width: 100%;
-        flex-direction: row;
-    }
+  aside{
+    width: 100%;
+    flex-direction: row;
+  }
 
-    aside .ad{
-      width: 30%;  
-    }
+  aside .ad{
+    width: 40%;
+  }
 
-    aside .ad a{
-      width: 30%;
-    }
+  .linkboton{
+    font-size: 70%;
+  }
+  button{
+    font-size: 70%;
+  }
 }
 
-@media screen and (max-width:600px){
-    header{
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-    header .barras{
-        width: 100%;
-        background:rgba(255, 141, 88, 0.4);
-        text-align: center;
-        padding: 20px;
-    }
-    
-    header .nombre{
-        margin: 0 20px;
-    }
-
-    header .beneficios{
-        margin-bottom: 20px;
-    }
-
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer .autor{
-        order: 2;
-    }
-
-    footer .redes-sociales{
-        order: 1;
-        margin-bottom: 20px;
-    }
+/*pantallas pequeñas*/
+@media (max-width: 576px) {
+  .main{
+    width: 100%;
 }
+  .libros{
+    width: 100%;
+  }
 
-@media screen and (max-width:400px) {
-    aside{
-        display: none;
-        
-    }
+  aside{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  aside .ad{
+    width: 30%;
+  }
+
+  .linkboton{
+    font-size: 60%;
+  }
+  button{
+    font-size: 60%;
+  }
 }
