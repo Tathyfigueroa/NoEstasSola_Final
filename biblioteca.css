@@ -72,16 +72,15 @@ body{
 
 header{
   background:#201E1F;
-  
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px;
   width: 100%;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .contiene-texto{
@@ -200,7 +199,7 @@ aside .ad{
   background:#7F5CFF;
 }
 
-  .contenedor h6{
+  .contenedors h6{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -208,7 +207,7 @@ aside .ad{
   display: flex;
   justify-content: center;
   }
-  .contenedor p{
+  .contenedors p{
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -353,18 +352,18 @@ footer a:hover {
         flex-direction: column;
         padding-bottom: 20px;
     }
-    header .menu{
+    header .barras{
         width: 100%;
         background:rgba(255, 141, 88, 0.4);
         text-align: center;
         padding: 20px;
     }
     
-    header .menu a{
+    header .nombre{
         margin: 0 20px;
     }
 
-    header .logo{
+    header .beneficios{
         margin-bottom: 20px;
     }
 
