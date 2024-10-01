@@ -189,3 +189,35 @@ footer a:hover {
     transform: scale(1.1);
 }
 
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    opacity: 0;
+    animation: slide-left 1s ease-out forwards;
+}
+
+.slide-right {
+    opacity: 0;
+    animation: slide-right 1s ease-out forwards;
+}
+
