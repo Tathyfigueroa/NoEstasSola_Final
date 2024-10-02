@@ -3,6 +3,7 @@ body {
   background-color: #1D201F;
   margin: 0;
   font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
 .container {
