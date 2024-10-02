@@ -1,20 +1,40 @@
+/* General styles */
+body {
+  background-color: #1D201F;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.header-contactos h1 {
+  color: #7f5cff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #700548;
+  background-color: #7f5cff;
   padding: 1rem;
 }
 
-.logo a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.menu a {
+.navbar a {
   color: white;
   text-decoration: none;
   margin: 0 1rem;
@@ -24,83 +44,70 @@
   text-decoration: underline;
 }
 
-header{
-    background-color: hwb(322 53% 9%);
-    margin-left: 0.2px;
-    margin-top: 0 px;
-    margin-left: 0.2px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu a {
+      margin: 10px 0;
+  }
+
+  .header-contactos h1 {
+      font-size: 1.5rem;
+  }
 }
-body{ 
-    background-color:#F5E5F0;
-    margin: 0px;
-    
+
+/* Cards */
+.card {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: fixed;
+  box-shadow: 0px 1px 10px #aa0f52;
+  cursor: default;
+  transition: all 400ms ease;
+  text-align: center;
+  background-color: #dde5b6;
+  padding: 20px;
 }
 
-
-.image{
-
-    width: 650px;
-    margin-right: 160px;
-    margin-left: -20px;
-    margin-bottom: -40px;
-
+.card h3 {
+  font-size: 24px;
+  color: #1D201F;
 }
 
-.image1{ 
-    width: 250px;
-
+.card:hover {
+  box-shadow: 5px 5px 20px #d1e5b6;
+  transform: translateY(-3%);
 }
-.container{
-    width: 70% ;
-    max-width: 900px;
-    display: flow-root;
-    margin-top: 70px;
-    margin-left: 400px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    
- }
 
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
- .card{
-    width: 70%;
-    margin: 10px;
-    margin-top: 25px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: fixed;
-    box-shadow: 0px 1px 10px #aa0f52;
-    cursor: default;
-    transition: all 400ms ease;
-    align-items: center;
+@media (min-width: 769px) {
+  .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+}
 
-
- }
-
- h3{
-    font-size: 34px;
-    color: #1D201F;
-
- }
-
-
- .card:hover{
-    box-shadow: 5px 5px 20px #d1e5b6;
-    transform: translateY(-3%);
- }
-
- .card .caja{
-    padding: 20px;
-    text-align: center;
-    background-color: #dde5b6;
- }
-
- .image3{
-    width:550px ;
- }
-
+/* Footer */
 footer {
-  background-color: #700548;
+  background-color: #7f5cff;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -113,14 +120,14 @@ footer .footer-content {
   flex-wrap: wrap;
 }
 
-footer .logo {
-  flex: 1;
-  text-align: center;
+footer .logo img {
+  max-width: 150px;
 }
 
 footer .contact-info, footer .social-media, footer .location {
   flex: 1;
   margin: 1rem;
+  text-align: center;
 }
 
 footer a {
@@ -132,4 +139,11 @@ footer a:hover {
   text-decoration: underline;
 }
 
- 
+/* Hover effect for images */
+.image img {
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
